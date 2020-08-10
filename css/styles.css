@@ -9,6 +9,7 @@ body{
     overflow-x: hidden;
 }
 
+
 #header{width: 100%;}
 .menu{
     width: 100%;
@@ -41,6 +42,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .menu .list-container .lists{
@@ -101,8 +103,8 @@ body{
 }
 
 .info .left-info .info-text p{
-    font-size: 25px;
-    line-height: 60px;
+    font-size: 23px;
+    line-height: 40px;
     color:#4d4d4d;
     font-weight: 300;
 }
@@ -130,8 +132,8 @@ body{
 }
 
 .info .right-info .info-text p{
-    font-size: 25px;
-    line-height: 60px;
+    font-size: 23px;
+    line-height: 40px;
     color:#4d4d4d;
     font-weight: 300;
 }
@@ -182,48 +184,91 @@ body{
     font-weight: 300;
     text-align: center;
 }
+/*--- Aqui form--------------------------*/
 
-.conctact-container{
+.contact-container{
     height: 540px;
-    background:#DCE3E3;
+    background: url(../img/main-banner.jpg);
     margin-top: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
-
-
-.contact-info-container{
+.contact-info-container,
+.contact-form-container{
+    flex-basis: 40%;
     height: 80%;
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
 }
-
 .contact-form,
 .contact-info{
     margin: auto;
 }
-
 .contact-info{
-    font-size: 18px;
+    color: white;
 }
-
 td{
     vertical-align: top;
     padding: 10px;
+    font-size: 18px;
     letter-spacing: 1px;
 }
-
 .contact-form{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #fff;
+    padding: 40px 0px;
+}
+.contact-input-container{
+    width: 90%;
+    text-align: center;
+}
+.input, .msg-input{
+    width: 30%;
+    margin-bottom: 10px;
+    background: rgba(96, 97, 95, 0.35);
+}
+.input{
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+.input:focus, textarea:focus{
+    outline: none;
+    background: rgba(96, 97, 95, 0.6);
+}
+textarea{
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+input[type="email"],
+input[type="text"]{
+    padding-left: 10px;
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: rgba(96, 97, 95, 0.6);
+}
+.testimonial-container {
+    height: 300px;
+    background: #1e1e1e;
+    margin-top: 30px;
+    display: flex;
 }
 
-.contact-input-container{
-   width: 90%;
-   align-items: center;
-}
+
+
+
+
+
 footer{
     width: 100%;
     height: 70px;
@@ -239,6 +284,7 @@ footer p{
 }
 
 @media only screen and (max-width: 805px){
+
     .menu{
        position: fixed;
        width: 100%;
@@ -320,6 +366,11 @@ footer p{
         font-size: 17px;
         line-height: 35px;
     }
+
+    .input, .msg-input{
+        width: 80%;
+    }
+    
 }
 
 @media only screen and (max-width: 661px){    
@@ -388,7 +439,7 @@ footer p{
          margin-bottom: 20px;
          font-weight: 600;
     }
-
+  
     footer{
         padding: 10px;
     }

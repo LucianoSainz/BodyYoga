@@ -7,6 +7,8 @@ btnMenu.addEventListener('click', () => {
     if(on_off) {
        menu.style.left = "0%";
        menu.style.tramsition = "0.5s";
+      
+       
 
        on_off = false;
 
@@ -14,6 +16,7 @@ btnMenu.addEventListener('click', () => {
         on_off = false;
        menu.style.left = "100%";
        menu.style.tramsition = "0.5s";
+      
 
        on_off = true;
     }
