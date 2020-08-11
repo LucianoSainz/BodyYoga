@@ -6,6 +6,8 @@
     <title>BodyYoga</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/fcfe650fcd.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -18,17 +20,17 @@
 
             <div class="list-container">
                 <ul class="lists">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Customers</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" class="scroll">Home</a></li>
+                    <li><a href="#about" class="scroll">About us</a></li>
+                    <li><a href="#customers" class="scroll">Customers</a></li>
+                    <li><a href="#contact" class="scroll">Contact</a></li>
                 </ul>
             </div>
         </nav>
 
 
 
-
+        <div id="home"></div>
         <figure class="img-header"></figure>
 
 
@@ -36,7 +38,7 @@
 
     <main>
         <section class="info">
-            <div class="left-info">
+            <div class="left-info" id="about">
                 <figure><img src="img/yogab.jpg" alt=""></figure>
                 <div class="info-text">
                     <p>BodyYoga is a unique hot yoga series that combines the precision of therapeutic yoga and the foundations of traditional yoga in a specially heated room. In addition to the signature hatha-based Modo series, there are also Modo Flow and Power Flow classes in which the sequence flows through an invigorating yet accessible vinyasa yoga style. Then, slow down and enjoy our Yin and Meditation classes or step outside yoga for challenging barre and movement classes. There's something for everyone, and a growing community to connect with! Our Modo instructors each have a minimum of 500 hours training, and most have multiple certifications across various styles and disciplines rooted in personal practice. Whether you are an absolute beginner or a more experienced student, we offer a range of accessible classes that are challenging, healthy and fun.</p>
@@ -54,7 +56,7 @@
             </div>
         </section>
 
-        <section class="testimonial-section">
+        <section class="testimonial-section" id="customers">
             <div class="testimonies">
                 <div class="img-people"><img src="img/testimonials-2.jpg"></div>
                 <div class="txt-people">
@@ -104,7 +106,7 @@
                 </table>
             </div>
         </div>
-            <div class="contact-form-container">
+            <div class="contact-form-container" id="contact">
                 <form action="#" class="contact-form">
                     <div class="contact-input-container">
                         <input type="text" class="input" placeholder="Name">
@@ -126,8 +128,17 @@
     </main>
 
  <footer id="footer">
-     <p>&copy; all rights reserved BodyYoga | 2020 created by LucianoSainz</p>
+     <div class="social">
+        <div><i class="fab fa-facebook-square"></i></div>
+        <div><i class="fab fa-twitter-square"></i></div>
+        <div><i class="fab fa-instagram"></i></div>
+     </div>
+ 
+     <div class="copi">
+     <p>&copy; all rights reserved BodyYoga | 2020. Created by LucianoSainz</p>
+     </div>
  </footer>
 </body>
 <script src="js/main.js"></script>
+
 </html>
