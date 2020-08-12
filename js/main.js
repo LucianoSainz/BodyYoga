@@ -1,4 +1,6 @@
 
+
+
 let btnMenu = document.querySelector('.btn-menu');
 let menu = document.querySelector('.list-container');
 let on_off = true;
@@ -25,6 +27,7 @@ btnMenu.addEventListener('click', () => {
 //scroll
 
 $(document).ready(function(){
+    AOS.init();
 	var scrollLink = $('.scroll');
 
 	//Smooth scrolling
@@ -36,3 +39,4 @@ $(document).ready(function(){
 		}, 2000)
 	});
 })
+

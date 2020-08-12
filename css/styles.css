@@ -469,7 +469,8 @@ footer .copi p{
         padding: 10px;
     }
 
-   footer p{
-    align-items: center;
+    footer .copi p{
+        align-items: center;
+        font-size: 10px;
    }
 }
